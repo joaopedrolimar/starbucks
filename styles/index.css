@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow: hidden;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    width: 90px;
+}
+
+.box-medium{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: -50px 0;
+}
+
+.box-text{
+    margin-left: 50px;
+    
+}
+
+.box-text h2{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.box-text h2 span{
+    color: #017143;
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+
+.box-text p{
+    font-size: 16px;
+    margin: 20px 0px 30px 0px;
+}
+
+.button-buy{
+    width: 140px;
+    border: none;
+    padding: 12px 10px;
+    background-color: #017143 ;
+    color: #fff;
+    border: none;
+    border-radius: 20px ;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+.box-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 800px;
+}
+
+.starbucks{
+    width: 400px;
+    z-index: 2;
+}
+
+.circle-desing{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #017143;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(350px at right center);
+    z-index: 1;
+    transform: translateX(10px);
+}
+
+
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.copo-menor{
+    width: 60px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.copo-menor:hover{
+    transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .container {
+      width: 100%;
+      overflow-y: scroll;
+    }
+  
+    .box-medium {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+  
+    .box-text {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .box-text h2 {
+      font-size: 40px;
+    }
+  
+    .starbucks {
+      width: 70%;
+    }
+  
+    .circle-desing {
+      clip-path: circle(50% at 100% 50%);
+      right: 0;
+      transform: none;
+    }
+  
+    .box-img {
+      height: auto;
+      width: 100vw; 
+      margin-right: 0; 
+    }
+  }
